@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Github</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css">
+</head>
+
+<body style="padding: 30px">
+    <h1 class="text-center" align="center" >PLANTILLA GITHUB</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <h4>Credenciales:</h4>
+            Nombre: <input id="user" >
+            <br>
+            <br>
+            Contraseña: <input id="pasword" type="password">
+        </div>
+        <div class="col-md-3">
+	        <h4> Nombre a eliminar/consultar:</h4>
+            Repositorio: <input id="repo">
+	    </div>
+        <div class="col-md-3">
+            <h4>Datos para crear:</h4>
+            Nombre: <input id="name" >
+            <br>
+            <br>
+            Descripcion: <input id="description">
+        </div>
+        <div class="col-md-3">
+            <h4>Datos para modificar:</h4>
+            Nombre Antiguo: <input id="name_a" >
+            <br>
+            <br>
+            Nombre Nuevo: <input id="name_m" >
+            <br>
+            <br>
+            Descripcion Nueva: <input id="description_m">
+        </div>
+    </div>
+    <div class="text-center">
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary" id="button_get_repos">GET REPOS</button>
+        <button type="button" class="btn btn-primary" id="button_get_repo">GET REPO</button>
+        <button type="button" class="btn btn-primary" id="button_post">POST REPO</button>
+	    <button type="button" class="btn btn-primary" id="button_delete">DELETE REPO</button>
+        <button type="button" class="btn btn-primary" id="button_update">UPDATE REPO</button>
+        <br>
+        <br>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">RESULTADO:</h3>
+        </div>
+        <div class="panel-body">
+            <span id="res"></span>
+
+        </div>
+    </div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Event and AJAX functions -->
+<script type="text/javascript" src="github.js"></script>
+</body>
+</html>
